@@ -115,4 +115,15 @@ body{
   margin: auto;
 }
 
-
+.notes-label{
+  background: #060606;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;  
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 3px 20px 3px 20px;
+  text-decoration: none;
+  width: 310px;
+  margin: auto;
+}

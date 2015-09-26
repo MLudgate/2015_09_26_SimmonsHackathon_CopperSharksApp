@@ -19,17 +19,28 @@ $(".dog-picture").bind("click",function(e){
 function highlightDog(e){
 	console.log("Dog pic clicked!!");
 
+	curr = Cookies.get("current");
+
 	var dogPic = $(e.currentTarget);
 
-	dogPic.removeClass("dog-picture-unselected");
-	dogPic.addClass("dog-picture-selected");
-
+	$("#d1").removeClass("dog-picture-selected");
+	$("#d2").removeClass("dog-picture-selected");
+	$("#d3").removeClass("dog-picture-selected");
+	$("#d1").addClass("dog-picture-unselected");
+	$("#d2").addClass("dog-picture-unselected");
+	$("#d3").addClass("dog-picture-unselected");
 	
-	if(dogPic.hasClass("d1")){
+	if(curr == "d1"){
+		$("#d1").removeClass("dog-picture-unselected");
+		$("#d1").addClass("dog-picture-selected"); 
 
-	} else if(dogPic.hasClass("d2")){
+	} else if(curr == "d2"){
+		$("#d2").removeClass("dog-picture-unselected");
+		$("#d2").addClass("dog-picture-selected");
 
-	} else if(dogPic.hasClass("d3")){
+	} else if(curr == "d3"){
+		$("#d3").removeClass("dog-picture-unselected");
+		$("#d3").addClass("dog-picture-selected");
 
 	} else {
 		console.log("plus");

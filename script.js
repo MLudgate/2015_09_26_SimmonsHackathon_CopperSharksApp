@@ -1,10 +1,12 @@
+Cookies.set("current","d1");
+
 
 function checkboxes(){
 	return _.map($("input"),function(box){return $(box).is(":checked");});
 }
 
 
-$("button").bind("click",function(e){
+$(".btn2").bind("click",function(e){
 	$(e.currentTarget.nextElementSibling).toggle();
 });
 

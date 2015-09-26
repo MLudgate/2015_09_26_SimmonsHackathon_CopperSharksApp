@@ -127,3 +127,7 @@ body{
   width: 301px;
   margin: auto;
 }
+
+textarea {
+    resize: none;
+}

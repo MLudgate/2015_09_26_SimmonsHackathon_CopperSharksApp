@@ -132,6 +132,10 @@ body{
   font-size: 17px;
   padding: 3px 20px 3px 20px;
   text-decoration: none;
-  width: 310px;
+  width: 301px;
   margin: auto;
+}
+
+textarea {
+    resize: none;
 }

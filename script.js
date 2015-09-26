@@ -39,11 +39,14 @@ function highlightDog(e){
 function saveDataToCookies(e){
 	if($(e.currentTarget).hasClass("d1")){
 		console.log("dog 1");
+		$("#name").html("Barry");
 		Cookies.set("current","d1")
 	} else if($(e.currentTarget).hasClass("d2")){
+		$("#name").html("Jonathon");
 		console.log("dog 2");
 		Cookies.set("current","d2");
 	} else if($(e.currentTarget).hasClass("d3")){
+		$("#name").html("Goldfinger");
 		console.log("dog 3");
 		Cookies.set("current","d3");
 	} else {

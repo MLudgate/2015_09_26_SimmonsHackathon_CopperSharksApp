@@ -11,7 +11,32 @@ $(".btn2").bind("click",function(e){
 });
 
 $(".dog-picture").bind("click",function(e){
-	console.log()
+	saveDataToCookies(e);
+
+	highlightDog(e);
+});
+
+function highlightDog(e){
+	console.log("Dog pic clicked!!");
+
+	var dogPic = $(e.currentTarget);
+
+	dogPic.removeClass("dog-picture-unselected");
+	dogPic.addClass("dog-picture-selected");
+
+	
+	if(dogPic.hasClass("d1")){
+
+	} else if(dogPic.hasClass("d2")){
+
+	} else if(dogPic.hasClass("d3")){
+
+	} else {
+		console.log("plus");
+	}
+}
+
+function saveDataToCookies(e){
 	if($(e.currentTarget).hasClass("d1")){
 		console.log("dog 1");
 		Cookies.set("current","d1")
@@ -26,7 +51,7 @@ $(".dog-picture").bind("click",function(e){
 
 	}
 	fillAll();
-});
+}
 
 
 d = Date(Date.now);

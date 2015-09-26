@@ -5,9 +5,17 @@
     margin-left: 22px;
 }
 
-.dog-picture {
+.dog-bar-images {
     float:left;
     width:25%;
+}
+
+.dog-picture-selected {
+  opacity: 1;
+}
+
+.dog-picture-unselected {
+  opacity: 0.25;
 }
 
 .container {
